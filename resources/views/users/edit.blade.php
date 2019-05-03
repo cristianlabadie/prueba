@@ -13,6 +13,7 @@
         <input name="name" type="text" value="{{ $user->name }}" class="form-control mt-1" placeholder="{{ __('Name') }}">
         <input name="email" type="text" value="{{ $user->email }}" class="form-control mt-1" placeholder="{{ __('E-Mail Address') }}">
         <div class="form-check">
+          
             @foreach($roles as $id => $name)
                 <label class="form-check-label">
                     <input name="roles[]"

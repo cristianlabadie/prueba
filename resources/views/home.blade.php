@@ -23,7 +23,7 @@
                         </ul>
                     </div>
                     <div>
-                        <canvas id="myChart" width="400" height="400"></canvas>
+                        <canvas id="myChart" width="200" height="200"></canvas>
                     </div>
                     @else
                         <div class="alert alert-info" role="alert">
