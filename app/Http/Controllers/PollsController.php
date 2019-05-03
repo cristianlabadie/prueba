@@ -44,13 +44,13 @@ class PollsController extends Controller
         $poll = Poll::create($request->all());
         $message = '';
         if($request->score <= 6) {
-            $message = 'A';
+            $message = '¿Por qué NO recomendaría la el proceso de selección?';
         } elseif ($request->score >= 7 && $request->score <= 8) {
-            $message = "B";
+            $message = "¿Qué podemos mejorar en el proceso de selección para que si lo recomiendes?";
         } elseif ($request->score >= 9) {
-            $message = "C";
+            $message = "Gracias por tu evaluación, nos puedes dejas tus comentarios o sugerencias a continuación";
         }
-        return back()->with('info', '¡Gracias por participar de nuestra encuesta! Mensaje: '.$message);
+        return back()->with('info',$message);
     }
 
     /**

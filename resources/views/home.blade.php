@@ -73,6 +73,4 @@ var myChart = new Chart(ctx, {
 });
 </script>
 @endsection
-@include('includes.footer')
-@endsection
 @endsection

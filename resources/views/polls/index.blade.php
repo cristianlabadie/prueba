@@ -35,11 +35,13 @@
                         </select>
                         {{ $errors->first('score', ':message') }}
                     </div>
+                    @if ($errors->message)
                     <div class="form-group">
                         <label for="comment">@lang('Commentary')</label>
                         <textarea name="comment" class="form-control" id="comment" rows="3" required></textarea>
                         {{ $errors->first('comment', ':message') }}
                     </div>
+                    @endif
                     <button type="submit" class="btn btn-primary float-right">
                         @lang("Send")
                     </button>
